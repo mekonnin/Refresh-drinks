@@ -29,8 +29,8 @@ const Home = () => {
             </div>
             <section className='item-container'>
                 <div className='item-grid'>
-                        {items.results &&
-                        items.results.map(item => (
+                        {items &&
+                        items.map(item => (
                                 <div className='item'>
                                     <Item key={item.id} item={item} />
                                 </div>

@@ -43,16 +43,18 @@ const Item = ({ item }) => {
     return (
         <>
             <div className="item-background">
-                <div className="item-image">
-                    <img src={item.image} alt="Items" />
-                </div>
+                <center>
+                    <div className="item-image">
+                        <img src={item.image} alt="Items" />
+                    </div>
+                </center>
             </div>
             <div className="item-bottom">
                 <div className="item-price">
                     <h5>{item.name}</h5>
                     <p>${item.price}</p>
                 </div>
-                {particularCart && particularCart.quantity > 0 ? (
+                {particularCart && particularCart.quantity >= -1 ? (
                     <div class="added-cart">
                         <span id="minus" onClick={clickMinusCart}>
                             －

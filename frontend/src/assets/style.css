@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Poppins';
 }
+
 /***************************
 ****Header
 ****************************/
@@ -16,18 +17,22 @@ header {
     box-shadow: 0 14px 28px rgb(0 0 0 / 25%);
     background-color: #fff;
 }
+
 header .logo {
     width: 70%;
     padding: 5px 20px;
 }
+
 header .logo img {
     width: 6%;
 }
+
 header nav {
     display: flex;
     justify-content: space-around;
     width: 10%;
 }
+
 /***************************
 ****Media Screen
 ****************************/
@@ -35,62 +40,80 @@ header nav {
     header .logo {
         width: 50%;
     }
+
     header .logo img {
         width: 15%;
     }
+
     header nav {
         width: 30%;
     }
 }
+
 @media screen and (max-width: 950px) and (min-width: 540px) {
     header .logo img {
         width: 15%;
     }
+
     header .logo {
         width: 50%;
     }
+
     header nav {
         width: 20%;
     }
 }
+
 /***************************
 ****Home
 ****************************/
 .main-image img {
     width: 100%;
 }
+
 .heading h2 {
     padding: 10px 50px;
 }
+
 .item-container {
     margin: 10px 100px;
 }
+
 .item-container .item-grid {
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
+
 .item-container .item-grid .item-background {
     background-color: rgb(235, 235, 235, 70%);
-    width: 240px;
+    width: 90%;
     height: 400px;
 }
+
 .item-container .item-grid .item-background .item-image img {
     height: 300px;
     padding: 50px 50px;
 }
+
 .item-container .item-grid .item-bottom {
     margin: 20px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
+    width: 90%;
 }
+.item-container .item-grid .item-bottom span#count {
+    padding: 0px 10px;
+}
+
 .item-container .item-grid .item-bottom button {
     background-color: #59af0f;
     color: #fff;
     padding: 5px 5px;
     border: 0;
+    white-space: nowrap;
 }
+
 .item-container .item-grid .item-bottom .added-cart {
     background-color: #59af0f;
     color: #fff;
@@ -98,12 +121,15 @@ header nav {
     border: 0;
     border-radius: 5px;
 }
+
 #minus {
     padding: 0px 3px;
 }
+
 #plus {
     padding: 0px 3px;
 }
+
 /***************************
 ****Media Screen
 ****************************/
@@ -111,72 +137,96 @@ header nav {
     .item-container {
         margin: 10px 30px;
     }
+
     .item-container .item-grid {
         grid-template-columns: auto auto;
     }
+    .product-heading {
+        margin: 10px 30px;
+    }
+
     .item-container .item-grid .item .item-background {
-        width: 140px;
+        width: 90%;
         height: 200px;
     }
+
     .item-container .item-grid .item .item-background .item-image img {
         height: 114px;
     }
+
     .item-container .item-grid .item .item-price h5,
     p,
     button {
-        font-size: 10px;
+        font-size: 2.7vw;
     }
+
     .item-container .item-grid .item-bottom {
-        width: 85%;
+        width: 90%;
     }
 }
+
 @media screen and (max-width: 950px) and (min-width: 540px) {
     .item-container {
         margin: 10px 30px;
     }
+
     .item-container .item-grid {
         grid-template-columns: auto auto auto;
     }
 }
+
 @media screen and (max-width: 540px) and (min-width: 450px) {
     .item-container {
         margin: 10px 70px;
     }
+    .product-heading {
+        margin: 10px 70px;
+    }
+
     .item-container .item-grid {
         grid-template-columns: auto auto;
     }
+
     .item-container .item-grid .item .item-background {
         width: 140px;
         height: 200px;
     }
+
     .item-container .item-grid .item .item-background .item-image img {
         height: 114px;
     }
+
     .item-container .item-grid .item .item-price h5,
     p,
     button {
         font-size: 10px;
     }
+
     .item-container .item-grid .item-bottom {
         width: 65%;
     }
 }
+
 @media screen and (max-width: 280px) {
     .item-container {
         margin: 20px 20px;
     }
+
     .item-container .item-grid .item .item-background {
         width: 110px;
         height: 165px;
     }
+
     .item-container .item-grid .item .item-background img {
         height: 100px;
         padding: 34px 24px;
     }
+
     .item-container .item-grid .item-bottom .added-cart {
         font-size: 8px;
     }
 }
+
 /******************************
 *******Footer
 *******************************/
@@ -189,6 +239,7 @@ header nav {
     padding: 10px 0px;
     gap: 30px;
 }
+
 .foot button {
     background-color: #59af0f;
     padding: 10px 20px;
@@ -197,24 +248,30 @@ header nav {
     border-radius: 10px;
     color: #fff;
 }
+
 .refresh {
     text-align: center;
     color: #808080;
 }
+
 .refresh img {
     width: 10%;
 }
+
 .refresh span {
     font-weight: 400;
     color: #000;
 }
+
 .copyright {
     border-top: 1px solid #808080;
     text-align: center;
 }
+
 .copyright p {
     padding: 10px 0px;
 }
+
 /******************************
 *******Media screen
 *******************************/
@@ -222,31 +279,38 @@ header nav {
     .refresh p {
         font-size: 10px;
     }
+
     .refresh img {
         width: 15%;
     }
+
     .foot {
         margin: 0;
         font-size: 10px;
     }
+
     .foot button {
         margin-right: 10px;
     }
 }
+
 @media screen and (max-width: 540px) and (min-width: 450px) {
     .foot {
         margin: 30px 100px 30px 40px;
     }
 }
+
 /******************************
 *******Cart
 *******************************/
 .heading {
     margin: 100px 70px;
 }
+
 .images {
     margin: 100px 70px;
 }
+
 .images ul li {
     display: flex;
     justify-content: space-between;
@@ -254,16 +318,28 @@ header nav {
     list-style: none;
     padding: 10px 0px;
 }
+
 .circle {
-    width: 120px;
-    height: 120px;
+    width: 67px;
     border-radius: 50%;
     border: 1px solid #000;
+    height: 7vh;
 }
+
+.menu {
+    font-size: 1.7vw;
+}
+.menu h6{
+    font-size:2vw;
+}
+
 .circle img {
-    height: 80px;
-    padding: 15px 45px;
+    display: flex;
+    align-items: center;
+    width: 23%;
+    padding: 5px;
 }
+
 button.number {
     padding: 5px 10px;
     background-color: #fff;
@@ -271,6 +347,7 @@ button.number {
     border-radius: 10px;
     letter-spacing: 5px;
 }
+
 /******************************
 *******Media Screen
 *******************************/
@@ -278,18 +355,17 @@ button.number {
     .images {
         margin: 10px 10px;
     }
+
     .circle {
-        width: 100px;
-        height: 100px;
+        width: 49px;
+        height: 49px;
     }
-    .circle img {
-        height: 60px;
-        padding: 15px 35px;
-    }
+
     .heading {
         margin: 20px 40px;
     }
 }
+
 /******************************
 *******Check OUT
 *******************************/
@@ -300,51 +376,63 @@ button.number {
     font-size: 40px;
     background-color: #ff8f00;
 }
+
 .box p {
     padding: 100px 0px;
     color: #fff;
     font-weight: 500;
 }
+
 .details {
     margin: 50px 150px;
 }
+
 .box2 {
     margin: 50px 0px;
 }
+
 .box2 table {
     width: 55%;
     border-spacing: 10px;
 }
+
 .td-item {
     width: 60%;
 }
+
 .td-price {
     border: 1px solid #808080;
     width: 5%;
     padding: 5px 15px;
     border-radius: 15px;
 }
+
 #total-price,
 #item-count,
 #subtotal {
     border-top: 1px solid #000;
     padding: 10px 0px;
 }
+
 .dispatch {
     width: 100%;
 }
+
 .dispatch .form {
     width: 60%;
 }
+
 .dispatch .form label {
     font-weight: bolder;
 }
+
 .dispatch .form input {
     width: 70%;
     padding: 10px 20px;
     border: 1px solid #808080;
     border-radius: 25px;
 }
+
 .dispatch .form button {
     padding: 10px 70px;
     color: #fff;
@@ -353,14 +441,20 @@ button.number {
     border-radius: 25px;
     margin-bottom: 100px;
 }
+
 .message {
     text-align: center;
     margin: 50px 0px;
 }
+.message span.color {
+    text-transform: capitalize;
+}
+
 .backhome {
     justify-content: center;
     display: flex;
 }
+
 .backhome button {
     padding: 10px 70px;
     color: #fff;
@@ -369,6 +463,7 @@ button.number {
     border-radius: 25px;
     margin-bottom: 100px;
 }
+
 /******************************
 *******Media Screen
 *******************************/
@@ -376,20 +471,25 @@ button.number {
     .box {
         height: 150px;
     }
+
     .box p {
         padding: 65px 0px;
         font-size: 25px;
     }
+
     .details {
         margin: 50px 20px;
     }
+
     .box2 table {
         width: 100%;
     }
+
     .dispatch .form {
         width: 100%;
     }
 }
+
 /******************************
 *******Sign In
 *******************************/
@@ -397,44 +497,54 @@ button.number {
     width: 100%;
     height: 840px;
     background-color: rgba(0, 0, 0, 50%);
-    position: absolute;
     top: 0;
+    position: fixed;
+    height: 100%;
 }
+
 .popup {
-    position: absolute;
+    position: fixed;
     top: 10%;
     left: 40%;
     width: 25%;
     background-color: #fff;
 }
+
 .popup .popup-inner {
     margin: 5px 0px;
 }
+
 .popup .popup-inner img {
     position: relative;
     width: 20px;
     padding: 0px 10px;
     left: 90%;
 }
+
 .popup .popup-preview {
     margin: 10px 30px;
 }
+
 .popup .popup-preview .input .heading-sign-in {
     text-align: center;
     margin-bottom: 25px;
     line-height: 40px;
 }
+
 .popup .popup-preview .input .input-feilds {
     width: 90%;
     margin: 0 auto;
 }
+
 .popup .popup-preview .input .input-feilds input {
     width: 85%;
     padding: 10px 20px;
     border-radius: 25px;
     border: 1px solid #808080;
 }
+
 .popup .popup-preview .input .input-feilds button {
+    white-space: nowrap;
     width: 100%;
     margin: 20px 0px;
     padding: 10px 100px;
@@ -443,15 +553,18 @@ button.number {
     background-color: #ff6c00;
     color: #fff;
 }
+
 .popup .popup-preview .input .input-feilds .bottom {
     margin: 30px 0px;
     text-align: center;
     display: flex;
     justify-content: center;
+    white-space: nowrap;
     align-items: center;
     gap: 20px;
     width: 80%;
 }
+
 .popup .popup-preview .input .input-feilds .sign-up-bottom {
     margin: 30px 0px;
     text-align: center;
@@ -461,6 +574,7 @@ button.number {
     gap: 20px;
     width: 100%;
 }
+
 /*****************************
 *******Media Screen
 ******************************/
